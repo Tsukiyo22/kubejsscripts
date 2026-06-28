@@ -1,0 +1,140 @@
+console.info("[Brink Logistics] 01_contracts.js ACTIVE")
+
+global.BrinkContracts = {
+    bread_32: {
+        type: "local",
+        pool: "local_basic",
+        category: "Food",
+        name: "Bread Delivery",
+        payout: 40,
+        items: [{ item: "minecraft:bread", amount: 32 }]
+    },
+
+    oak_64: {
+        type: "local",
+        pool: "local_basic",
+        category: "Lumber",
+        name: "Lumber Delivery",
+        payout: 45,
+        items: [{ item: "minecraft:oak_log", amount: 64 }]
+    },
+
+    cobble_128: {
+        type: "local",
+        pool: "local_basic",
+        category: "Quarry",
+        name: "Quarry Delivery",
+        payout: 35,
+        items: [{ item: "minecraft:cobblestone", amount: 128 }]
+    },
+
+    iron_32: {
+        type: "local",
+        pool: "local_basic",
+        category: "Mining",
+        name: "Iron Supply Order",
+        payout: 75,
+        items: [{ item: "minecraft:iron_ingot", amount: 32 }]
+    },
+
+    train_bread_256: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Food Freight",
+        name: "Regional Bread Shipment",
+        payout: 350,
+        items: [{ item: "minecraft:bread", amount: 256 }]
+    },
+
+    train_oak_512: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Lumber Freight",
+        name: "Regional Oak Lumber Shipment",
+        payout: 500,
+        items: [{ item: "minecraft:oak_log", amount: 512 }]
+    },
+
+    train_cobble_768: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Construction Freight",
+        name: "Regional Quarry Shipment",
+        payout: 550,
+        items: [{ item: "minecraft:cobblestone", amount: 768 }]
+    },
+
+    train_iron_256: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Metals Freight",
+        name: "Regional Iron Shipment",
+        payout: 1000,
+        items: [{ item: "minecraft:iron_ingot", amount: 256 }]
+    },
+
+    train_mixed_food_01: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Food Freight",
+        name: "Mixed Food Shipment",
+        payout: 650,
+        items: [
+            { item: "minecraft:bread", amount: 256 },
+            { item: "minecraft:cooked_beef", amount: 128 },
+            { item: "minecraft:cooked_chicken", amount: 128 }
+        ]
+    },
+
+    train_mixed_lumber_01: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Lumber Freight",
+        name: "Mixed Lumber Shipment",
+        payout: 700,
+        items: [
+            { item: "minecraft:oak_log", amount: 256 },
+            { item: "minecraft:spruce_log", amount: 256 },
+            { item: "minecraft:birch_log", amount: 128 }
+        ]
+    },
+
+    train_mixed_ores_01: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Metals Freight",
+        name: "Mixed Industrial Metals Shipment",
+        payout: 1400,
+        items: [
+            { item: "minecraft:iron_ingot", amount: 128 },
+            { item: "minecraft:copper_ingot", amount: 256 },
+            { item: "minecraft:gold_ingot", amount: 32 }
+        ]
+    },
+
+    train_mixed_ores_02: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Metals Freight",
+        name: "Heavy Industrial Metals Shipment",
+        payout: 1900,
+        items: [
+            { item: "minecraft:iron_ingot", amount: 256 },
+            { item: "minecraft:copper_ingot", amount: 256 },
+            { item: "minecraft:gold_ingot", amount: 64 }
+        ]
+    },
+
+    train_mixed_building_01: {
+        type: "train",
+        pool: "train_tier2",
+        category: "Construction Freight",
+        name: "Regional Construction Shipment",
+        payout: 800,
+        items: [
+            { item: "minecraft:stone_bricks", amount: 256 },
+            { item: "minecraft:cobblestone", amount: 256 },
+            { item: "minecraft:glass", amount: 128 }
+        ]
+    }
+}
