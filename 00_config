@@ -6,7 +6,7 @@ console.info("[Brink Logistics] 00_config.js ACTIVE")
 global.BrinkConfig = {
     tickInterval: 40, // 2 seconds
     stationRadius: 6,
-
+// Replace "kuronomyLdollar_xx" with any type of pay output for your systems. This is just showing it can utilize modded items!
     moneyItems: [
         { value: 100, item: "kuronomy:dollar_100" },
         { value: 50, item: "kuronomy:dollar_50" },
@@ -14,11 +14,11 @@ global.BrinkConfig = {
         { value: 5, item: "kuronomy:dollar_5" },
         { value: 1, item: "kuronomy:dollar_coin" }
     ],
-
+// Replace contents in ".." for both to your liking supports most items!
     sealedCrateItem: "refurbished_furniture:oak_crate",
     crateOpeningTool: "create:wrench",
 
-    // Optional old/static offices. You can leave these or delete them once you use dynamic offices.
+    // Optional old/static offices. You can leave these or delete them once you use dynamic offices. These are examples of hard coding locations without utilizing commands.
     staticOffices: {
         town_basic: {
             id: "town_basic",
