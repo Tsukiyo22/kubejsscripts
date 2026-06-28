@@ -1,0 +1,43 @@
+console.info("[Brink Logistics] 00_config.js ACTIVE")
+
+// Core settings and fallback/static offices.
+// Dynamic offices created by commands or Surveyor's Kits are stored in server persistent data.
+
+global.BrinkConfig = {
+    tickInterval: 40, // 2 seconds
+    stationRadius: 6,
+
+    moneyItems: [
+        { value: 100, item: "kuronomy:dollar_100" },
+        { value: 50, item: "kuronomy:dollar_50" },
+        { value: 10, item: "kuronomy:dollar_10" },
+        { value: 5, item: "kuronomy:dollar_5" },
+        { value: 1, item: "kuronomy:dollar_coin" }
+    ],
+
+    sealedCrateItem: "refurbished_furniture:oak_crate",
+    crateOpeningTool: "create:wrench",
+
+    // Optional old/static offices. You can leave these or delete them once you use dynamic offices.
+    staticOffices: {
+        town_basic: {
+            id: "town_basic",
+            name: "Town Contractor",
+            kind: "local",
+            pool: "local_basic",
+            contractBlock: { x: 259, y: 64, z: 408 },
+            inputChest: { x: 258, y: 64, z: 407 },
+            outputChest: { x: 257, y: 64, z: 407 }
+        },
+
+        regional_freight: {
+            id: "regional_freight",
+            name: "Regional Freight Depot",
+            kind: "train",
+            pool: "train_tier2",
+            contractBlock: { x: 253, y: 64, z: 404 },
+            inputChest: { x: 253, y: 65, z: 402 },
+            outputChest: { x: 248, y: 68, z: 402 }
+        }
+    }
+}
