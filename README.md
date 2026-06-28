@@ -1,6 +1,10 @@
 # kubejsscripts
 Where I will upload my Kubejs scripts for modpacks I work on.
 
+Feel free to download and upload to ..\minecraft\Instances\Brink Of War\kubejs\server_scripts. For a better runtime use a subfolder in server_scripts with all the .js files in the subfolder.
+
+Open your game OR /reload within the game to enable the scripts
+
 # Brink Logistics v2 Framework
 
 ## Overview
